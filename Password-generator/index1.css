@@ -1,0 +1,124 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: #fff;
+}
+
+/* Container */
+.container {
+    width: 350px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Password Display */
+.display-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: #222;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.display {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: transparent;
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+}
+
+button[data-copy] {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+button[data-copy] img {
+    filter: invert(1);
+}
+
+/* Input Styles */
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.slider {
+    width: 100%;
+    margin-bottom: 15px;
+    cursor: pointer;
+    accent-color: #00c9ff;
+}
+
+/* Checkboxes */
+div input[type="checkbox"] {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+label {
+    font-size: 14px;
+}
+
+/* Strength Indicator */
+.strength-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+}
+
+[data-indicator] {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: gray;
+    transition: background 0.3s ease;
+}
+
+/* Generate Button */
+.generateBtn {
+    width: 100%;
+    background: #00c9ff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.generateBtn:hover {
+    background: #009ac7;
+}
+
+/* Responsive Design */
+@media (max-width: 400px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+}
